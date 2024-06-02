@@ -48,5 +48,7 @@ This is only a first version of the program. Numerous upgrades and expansions ca
 For example, to come back to the common marmoset case, you can see in the calculation table below that the program had to run 2,700 simulations of one hundred generations. Because of course, there are already the six management strategies, the ones that I explained you with the clownfish examples, to start with.
 We tested all this for three different group carrying capacities, for five transfer frequencies between groups, for three transfer ratios at the higher level and two founder group sizes. Finally, we did five different runs for every combination. In total, this means the script had to simulate 2,700 runs.
 But remember that this is only for one design, the 4-2-1 breeding design, so a breeding design with one institute thas has two life support systems, each with four breeding groups.
-![Calculation table for the common marmoset case study](https://github.com/RafVIB/group_management/assets/169991371/334d1df7-a43a-4bdf-9cee-e41b58168335)
+![Calculation table for the common marmoset case study](https://github.com/RafVIB/group_management/blob/main/calculation%20table.png)
 If you want to test multiple breeding designs to see which one is best, the program will take such a long time to run that it becomes practically impossible to compare these multiple breeding designs, which is a shame, because that would give us so much more usable information that just testing the different transfer strategies. So the main bottleneck that has to be fixed in the future, is running time.
+
+# What you can find in this repository
