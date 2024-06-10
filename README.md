@@ -32,7 +32,7 @@ These graphs display how the overall genetic diversity and inbreeding coefficien
 
 When you let the script run multiple times for every possible combination, you can graphically inspect the simulated data for a given breeding design. Here, you can see an example of the summarized data for a very similar scenario, but in this case with two instutes, with a carrying capacity of 20 animals per groups and different transfer frequencies.
 Each simulation simulates one hundred generations. Graph A summarizes how genetic diversity evolves across the generations for the different transfer strategies. Graph B does the same for inbreeding, while graph C keeps track of the number of transfers.
-![Example of an overarching boxplot for a certain scenario]([https://github.com/RafVIB/group_management/assets/169991371/ee8fb61c-f61d-439e-b28e-f2c0ce0b7b19](https://github.com/RafVIB/group_management/blob/main/example%20overarching%20boxplot.png))
+![Example of an overarching boxplot for a certain scenario](https://github.com/RafVIB/group_management/blob/main/example%20overarching%20boxplot.png)
 (What stands out here is that the mean kinship strategy comes with way less transfers than other strategies, except of course line breeding which doesn’t have any transfers at all. But this is logical: strategies such as circular breeding, Falconer’s breeding scheme and maximum avoidance of inbreeding will always transfer animals when the time to transfer has come, while mean kinship breeding will only transfer an animal if its mean kinship toe the animals in the destination group is lower than its mean kinship to the animals in its current group. This reduced number of transfers also explains why inbreeding is higher in mean kinship breeding. On the other hand, the mean kinship strategy is quite good at maintaining genetic diversity.)
 
 For a more formal consideration of the different transfer strategies, a statistical test is also built in in the script. It fits a linear mixed-effect model on the simulation outputs. If you ask R to give a summary of the fitted model, you get an output like this, that shows the effects of the different transfer strategies and their interactions with transfer frequency. The intercept represents the circular breeding strategy. The estimates of the effects than show how much better or worse these different transfer strategies are for maintaining genetic diversity, and how significant this effect is.
@@ -52,7 +52,7 @@ But remember that this is only for one design, the 4-2-1 breeding design, so a b
 If you want to test multiple breeding designs to see which one is best, the program will take such a long time to run that it becomes practically impossible to compare these multiple breeding designs, which is a shame, because that would give us so much more usable information that just testing the different transfer strategies. So the main bottleneck that has to be fixed in the future, is running time.
 
 # What you can find in this repository
-The programme script, documented with notes throughout for readability:
+The programme script (R file), documented with notes throughout for readability:
 - A blank programme where you have to fill in all paramaters yourself ('GMI_V2024_0023_blank');
 - A programme filled in for the common marmoset example ('GMI_V2024_0023_example').
 
