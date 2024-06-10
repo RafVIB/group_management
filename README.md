@@ -52,3 +52,10 @@ But remember that this is only for one design, the 4-2-1 breeding design, so a b
 If you want to test multiple breeding designs to see which one is best, the program will take such a long time to run that it becomes practically impossible to compare these multiple breeding designs, which is a shame, because that would give us so much more usable information that just testing the different transfer strategies. So the main bottleneck that has to be fixed in the future, is running time.
 
 # What you can find in this repository
+The programme script, documented with notes throughout for readability:
+- A blank programme where you have to fill in all paramaters yourself ('GMI_V2024_0023_blank');
+- A programme filled in for the common marmoset example ('GMI_V2024_0023_example').
+
+The simulation output data from the common marmoset case study:
+- The CSV-file 'PS_4_2_1_' describes the parameter space (all simulated combination). Each line represent one scenario, with successively carrying capacity of a group (K_G), transfer frequency between groups (TFG), transfer ratio at the higher level (TFHL), and number of founder individuals per group (FounderSize);
+- The CSV-file 'OUT_4_2_1_M_' hols the simulation output. Each line specifies a certain combination of parameters, a generation, the simulation (out of five per combination of parameters), the group, and the genetic diversity, inbreeding coefficient, group size and cumulative number of transfers in this generation.
